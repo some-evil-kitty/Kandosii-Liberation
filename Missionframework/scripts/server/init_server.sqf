@@ -141,3 +141,8 @@ if (KPLIB_param_restart > 0) then {
         }
     } foreach allGroups;
 }] call CBA_fnc_addEventHandler;
+
+
+KPLIB_aceBox = "knd_resupply_arsenal" createVehicle [0,0,100];
+publicVariable "KPLIB_aceBox";
+KPLIB_aceBox enableSimulation false;

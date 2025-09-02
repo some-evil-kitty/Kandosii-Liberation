@@ -67,3 +67,66 @@ if (isServer) then {
     KPLIB_initServerDone = true;
     publicVariable "KPLIB_initServerDone";
 };
+
+["ace_explosives_defuse",
+{
+    if !(isServer) exitwith {};
+  Params ["_explosive"];
+  //systemchat str _explosive;
+  //_explod = _explosive getVariable ["kp_isplacedIED",false];
+  //systemchat str _explod;
+  If (_explosive getVariable ["kp_isplacedIED",false]) then {
+    //systemChat "Correctly working";
+    KPLIB_civ_rep = KPLIB_civ_rep + 4;
+    publicVariable "KPLIB_civ_rep";
+};
+  }
+] call CBA_fnc_addEventHandler;
+
+
+["KPLIB_addUnlockAction",{
+    params ["_vehicle"];
+    _vehicle addAction [
+    "<t color='#FF0000'>" + "Unlock" + "</t> <img size='2' image='res\ui_recycle.paa'/>",
+        {
+        params ["_target", "_caller", "_actionId", "_arguments"];
+        ["KPLIB_unlockVehicle",_target,_target] call cba_fnc_targetEvent;
+        _target removeAction _actionId;
+        },
+        "",
+        -900,
+        true,
+            true,
+            "",
+            "(locked _target > 1) && ('ToolKit' in items _caller)",
+            6
+            ];
+}] call CBA_fnc_addEventHandler;
+
+private _action = ["KPLIB_UnlockVehicle","Unlock Vehicle","",{
+	params ["_target","_caller"];
+    [5, [_target], {
+        params ["_target"];
+        ["KPLIB_unlockVehicle",_target,_target] call CBA_fnc_targetEvent;
+    }, {}, "Unlocking Vehicle..."] call ace_common_fnc_progressBar
+},{
+params ["_target","_caller"];
+(locked _target > 1) && ("ToolKit" in items _caller)},{},[], [0,0,0], 100] call ace_interact_menu_fnc_createAction;
+
+
+["All", 0, ["ACE_MainActions"], _action,true] call ace_interact_menu_fnc_addActionToClass;
+
+["KPLIB_unlockVehicle",{
+    params ["_vehicle"];
+    _vehicle lock 0;
+}] call CBA_fnc_addEventHandler;
+
+if hasInterface then {
+["All", "init", {
+    params ["_newVehicle"];
+    if !(_newVehicle getVariable ["KPLIB_isManagedVehicle",false]) exitwith {};
+    ["KPLIB_addUnlockAction",[_newVehicle]] call CBA_fnc_localEvent;
+},true,[],true] call CBA_fnc_addClassEventHandler;
+};
+
+

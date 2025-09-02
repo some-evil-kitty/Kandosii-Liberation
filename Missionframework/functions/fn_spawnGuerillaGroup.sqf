@@ -72,8 +72,8 @@ for "_i" from 1 to _amount do {
     // Add possible RPG launcher
     if ((_tier > 1) && ((random 100) <= KPLIB_resistance_at_chance)) then {
         _unit addBackpack "B_FieldPack_cbr";
-        for "_i" from 1 to 3 do {_unit addItemToBackpack "RPG7_F";};
-        _unit addWeapon "launch_RPG7_F";
+        for "_i" from 1 to 3 do {_unit addItemToBackpack "knd_mag_rps6_saclos";};
+        _unit addWeapon "knd_RPS6";
     };
 };
 

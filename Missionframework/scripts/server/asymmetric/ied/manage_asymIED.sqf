@@ -27,6 +27,7 @@ if (!(isnull _roadobj)) then {
     private _roadpos = getpos _roadobj;
     _ied_obj = createMine [_ied_type, _roadpos getPos [_spread, random (360)], [], 0];
     _ied_obj setdir (random 360);
+    _ied_obj setVariable ["kp_isplacedIED",true,true];
 
     if (KPLIB_asymmetric_debug > 0) then {[format ["manage_asymIED.sqf -> IED %1 spawned at %2", _count, markerText _sector], "ASYMMETRIC"] remoteExecCall ["KPLIB_fnc_log", 2];};
 

@@ -81,3 +81,7 @@ if (player isEqualTo ([] call KPLIB_fnc_getCommander)) then {
         };
     };
 };
+
+player addEventHandler ["Respawn", {
+    player setUnitTrait ["Medic",true]
+}];

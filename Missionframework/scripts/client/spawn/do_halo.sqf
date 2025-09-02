@@ -39,25 +39,27 @@ if ( dojump > 0 ) then {
     KPLIB_last_halo_jump = time;
     halo_position = halo_position getPos [random 250, random 360];
     halo_position = [ halo_position select 0, halo_position select 1, KPLIB_height_halo + (random 200) ];
+    if ([] call knd_fnc_hasJetpack) then {player setunitfreefallheight 1000000};
     halojumping = true;
     sleep 0.1;
     cutRsc ["fasttravel", "PLAIN", 1];
     playSound "parasound";
     sleep 2;
     _backpack = backpack player;
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if (( _backpack != "" && _backpack != "B_Parachute" ) && !([] call knd_fnc_hasJetpack)) then {
         _backpackcontents = backpackItems player;
         removeBackpack player;
         sleep 0.1;
+        player addBackpack "B_Parachute";
     };
-    player addBackpack "B_Parachute";
+    
 
     player setpos halo_position;
 
     sleep 4;
     halojumping = false;
     waitUntil { !alive player || isTouchingGround player };
-    if ( _backpack != "" && _backpack != "B_Parachute" ) then {
+    if ( _backpack != "" && _backpack != "B_Parachute" && !([] call knd_fnc_hasJetpack)) then {
         sleep 2;
         player addBackpack _backpack;
         clearAllItemsFromBackpack player;

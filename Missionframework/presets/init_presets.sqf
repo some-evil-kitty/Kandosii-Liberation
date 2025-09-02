@@ -169,10 +169,10 @@ KPLIB_b_inf_classes             = KPLIB_b_inf_classes               arrayInterse
 /*
     Opfor squad compositions
 */
-KPLIB_o_squadStd        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_medic, KPLIB_o_marksman, KPLIB_o_grenadier, KPLIB_o_riflemanLAT];
-KPLIB_o_squadInf        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_heavyGunner, KPLIB_o_marksman, KPLIB_o_sharpshooter, KPLIB_o_sniper];
-KPLIB_o_squadTank       = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_riflemanLAT, KPLIB_o_riflemanLAT, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist];
-KPLIB_o_squadAir        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_riflemanLAT, KPLIB_o_riflemanLAT, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist];
+KPLIB_o_squadStd        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_rifleman, KPLIB_o_medic, KPLIB_o_marksman, KPLIB_o_rifleman, KPLIB_o_riflemanLAT,KPLIB_o_rifleman,KPLIB_o_rifleman];
+KPLIB_o_squadInf        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_machinegunner, KPLIB_o_heavyGunner, KPLIB_o_marksman, KPLIB_o_riflemanLAT, KPLIB_o_grenadier, KPLIB_o_rifleman,KPLIB_o_rifleman,KPLIB_o_rifleman];
+KPLIB_o_squadTank       = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_rifleman, KPLIB_o_rifleman, KPLIB_o_riflemanLAT, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist, KPLIB_o_atSpecialist,KPLIB_o_rifleman,KPLIB_o_rifleman];
+KPLIB_o_squadAir        = [KPLIB_o_squadLeader, KPLIB_o_medic, KPLIB_o_riflemanLAT, KPLIB_o_rifleman, KPLIB_o_rifleman, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist, KPLIB_o_aaSpecialist,KPLIB_o_rifleman,KPLIB_o_rifleman];
 
 /*
     Liberation specific collections
@@ -258,7 +258,7 @@ KPLIB_typeAirClasses   = +KPLIB_b_air_classes;
 } forEach (KPLIB_b_support_classes + [toLower KPLIB_b_potato01]);
 
 // Military alphabet used for FOBs and convois
-KPLIB_militaryAlphabet = ["Alpha", "Bravo", "Charlie", "Delta", "Echo", "Foxtrot", "Golf", "Hotel", "India", "Juliet", "Kilo", "Lima", "Mike", "November", "Oscar", "Papa", "Quebec", "Romeo", "Sierra", "Tango", "Uniform", "Victor", "Whiskey", "X-Ray", "Yankee", "Zulu"];
+KPLIB_militaryAlphabet = ["Solus", "Ehn", "T'ad", "Cuir", "Rayshe'a", "Resol", "E'tad", "Sh'ehn", "She'cu", "Ta'raysh", "Ta'raysh solus", "Ta'raysh ehn", "Ta'raysh t'ad", "Ta'raysh cuir", "Ta'raysh rayshe'a"];
 
 // Misc variables
 markers_reset = [99999,99999,0];

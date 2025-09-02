@@ -1,8 +1,8 @@
 scriptName "open_arsenal";
 
 if (KPLIB_param_directArsenal) exitWith {
-    if (KPLIB_ace && KPLIB_param_arsenalType) then {
-        [player, player, false] call ace_arsenal_fnc_openBox;
+    if (KP_liberation_ace && KP_liberation_arsenal_type) then {
+        [KPLIB_aceBox, player, false] call ace_arsenal_fnc_openBox;
     } else {
         ["Open", false] spawn BIS_fnc_arsenal;
     };
@@ -21,6 +21,7 @@ private ["_loadouts_data"];
 // Get loadouts either from ACE or BI arsenals
 if (KPLIB_ace && KPLIB_param_arsenalType) then {
     _loadouts_data = +(profileNamespace getVariable ["ace_arsenal_saved_loadouts", []]);
+    _loadouts_data sort true;
 } else {
     private _saved_loadouts = +(profileNamespace getVariable "bis_fnc_saveInventory_data");
     _loadouts_data = [];
@@ -33,9 +34,8 @@ if (KPLIB_ace && KPLIB_param_arsenalType) then {
             _counter = _counter + 1;
         } forEach _saved_loadouts;
     };
+    _loadouts_data sort true;
 };
-
-_loadouts_data sort true;
 
 waitUntil { dialog };
 
@@ -128,7 +128,7 @@ if ( edit_loadout > 0 ) then {
     closeDialog 0;
     waitUntil { !dialog };
     if (KPLIB_ace && KPLIB_param_arsenalType) then {
-        [player, player, false] call ace_arsenal_fnc_openBox;
+        [KPLIB_aceBox, player, false] call ace_arsenal_fnc_openBox;
     } else {
         [ "Open", false ] spawn BIS_fnc_arsenal;
     };

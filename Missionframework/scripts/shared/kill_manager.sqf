@@ -104,7 +104,7 @@ params ["_unit", "_killer"];
         };
 
         // Civilian casualty
-        if (side (group _unit) == KPLIB_side_civilian) then {
+        if ((side (group _unit) == KPLIB_side_civilian) && !(_unit getVariable ["jen_isSurrendered",false])) then {
             stats_civilians_killed = stats_civilians_killed + 1;
 
             // Killed by BLUFOR

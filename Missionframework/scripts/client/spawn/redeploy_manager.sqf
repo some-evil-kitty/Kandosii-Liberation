@@ -85,6 +85,8 @@ while {true} do {
         };
     };
 
+    _loadouts_data sort true;
+
     lbAdd [203, "--"];
     {lbAdd [203, _x param [0]]} forEach _loadouts_data;
     lbSetCurSel [203, 0];

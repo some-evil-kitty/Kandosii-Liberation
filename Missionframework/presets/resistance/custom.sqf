@@ -30,8 +30,8 @@ KPLIB_r_units = [
 
 // Armed vehicles
 KPLIB_r_vehicles = [
-    "I_G_Offroad_01_armed_F",
-    "I_G_Offroad_01_AT_F"
+    "knd_O_rebel_AAT",
+    "JMSLLTE_B_veh_ITT_imp_F"
 ];
 
 /* Guerilla Equipment
@@ -41,84 +41,64 @@ There are 3 tiers for every category. If the strength of the guerillas will incr
 ["Weaponclassname","Magazineclassname","magazine amount","optic","tripod"]
 You can leave optic and tripod empty with "" */
 KPLIB_r_weapons_1 = [
-    ["arifle_AKM_F","30Rnd_762x39_Mag_F",4,"",""],
-    ["arifle_AKS_F","30Rnd_545x39_Mag_F",4,"",""],
-    ["hgun_PDW2000_F","30Rnd_9x21_Mag",4,"",""],
-    ["SMG_01_F","30Rnd_45ACP_Mag_SMG_01",4,"",""],
-    ["SMG_02_F","30Rnd_9x21_Mag_SMG_02",4,"",""],
-    ["SMG_05_F","30Rnd_9x21_Mag_SMG_02",4,"",""]
+    ["knd_spacek_folded","knd_spacek_mag",4,"",""],
+    ["knd_spacek","knd_spacek_mag",4,"",""],
+    ["knd_ppsh","knd_ppsh_mag",4,"",""]
 ];
 
 KPLIB_r_weapons_2 = [
-    ["arifle_Katiba_F","30Rnd_65x39_caseless_green",4,"optic_ACO_grn",""],
-    ["arifle_Mk20_plain_F","30Rnd_556x45_Stanag",4,"optic_ACO_grn",""],
-    ["arifle_TRG21_F","30Rnd_556x45_Stanag",4,"optic_ACO_grn",""],
-    ["arifle_CTAR_blk_F","30Rnd_580x42_Mag_F",4,"optic_ACO_grn",""],
-    ["arifle_MX_SW_F","100Rnd_65x39_caseless_mag",3,"optic_ACO_grn","bipod_01_F_blk"],
-    ["srifle_DMR_06_olive_F","20Rnd_762x51_Mag",5,"optic_Hamr","bipod_01_F_blk"]
+    ["knd_a280","knd_a280_mag",4,"knd_a280_scope_attachment",""],
+    ["knd_spacek_folded","knd_spacek_mag",4,"",""],
+    ["knd_spacek","knd_spacek_mag",4,"",""],
+    ["knd_ppsh","knd_ppsh_mag",4,"",""],
+    ["knd_cycler_F","knd_cycler_mag",5,"",""]
 ];
 
 KPLIB_r_weapons_3 = [
-    ["arifle_CTAR_blk_F","30Rnd_580x42_Mag_F",4,"optic_MRCO",""],
-    ["arifle_SPAR_01_blk_F","30Rnd_556x45_Stanag",4,"optic_MRCO",""],
-    ["arifle_SPAR_03_blk_F","20Rnd_762x51_Mag",5,"optic_MRCO",""],
-    ["arifle_ARX_blk_F","30Rnd_65x39_caseless_green",4,"optic_MRCO",""],
-    ["srifle_DMR_03_F","20Rnd_762x51_Mag",5,"optic_MRCO",""],
-    ["srifle_EBR_F","20Rnd_762x51_Mag",5,"optic_MRCO",""],
-    ["srifle_DMR_07_blk_F","20Rnd_650x39_Cased_Mag_F",5,"optic_DMS",""],
-    ["LMG_Mk200_F","200Rnd_65x39_cased_Box",2,"optic_MRCO","bipod_01_F_blk"]
+    ["knd_a280","knd_a280_mag",4,"knd_a280_scope_attachment",""],
+    ["knd_spacek_folded","knd_spacek_mag",4,"",""],
+    ["knd_spacek","knd_spacek_mag",4,"",""],
+    ["knd_ppsh","knd_ppsh_mag",4,"",""],
+    ["knd_cycler_F","knd_cycler_mag",5,"",""],
+    ["knd_AMR_F","knd_mag_AMR",5,"knd_amr_scope_attachment",""],
+    ["knd_amban_F","knd_amban_mag",20,"",""]
 ];
 
 // Uniforms
 KPLIB_r_uniforms_1 = [
-    "U_C_Poloshirt_blue",
-    "U_C_Poloshirt_burgundy",
-    "U_C_Poloshirt_salmon",
-    "U_C_Poloshirt_redwhite",
-    "U_C_Poloshirt_stripped",
-    "U_C_Poloshirt_tricolour",
-    "U_C_Poor_1",
-    "U_C_Man_casual_1_F",
-    "U_C_Man_casual_2_F",
-    "U_C_Man_casual_3_F",
-    "U_C_Man_casual_4_F",
-    "U_C_Man_casual_5_F",
-    "U_C_Man_casual_6_F",
-    "U_Marshal"
+    "JMSLLTE_c_genshirt_beige_F_CombatUniform",
+    "JMSLLTE_c_jumpsuit_blue_F_CombatUniform",
+    "JMSLLTE_c_jumpsuit_green_F_CombatUniform",
+    "JMSLLTE_c_jumpsuit_sand_F_CombatUniform",
+    "JMSLLTE_EmpNavyCrew_red_F_CombatUniform",
+    "JMSLLTE_c_genshirt2_black_F_CombatUniform",
+    "JMSLLTE_c_genshirt_blue_F_CombatUniform"
 ];
 
 KPLIB_r_uniforms_2 = [
-    "U_I_C_Soldier_Bandit_1_F",
-    "U_I_C_Soldier_Bandit_2_F",
-    "U_I_C_Soldier_Bandit_3_F",
-    "U_I_C_Soldier_Bandit_4_F",
-    "U_I_C_Soldier_Bandit_5_F",
-    "U_BG_Guerilla2_1",
-    "U_BG_Guerilla2_2",
-    "U_BG_Guerilla2_3",
-    "U_BG_Guerilla3_1",
-    "U_C_HunterBody_grn",
-    "U_C_Mechanic_01_F",
-    "U_I_C_Soldier_Para_5_F",
-    "U_I_G_resistanceLeader_F"
+    "JMSLLTE_ScumTroopCom_black_F_CombatUniform",
+    "JMSLLTE_ScumTroopCom_black2_F_CombatUniform",
+    "JMSLLTE_ScumPathfinder_brown_F_CombatUniform",
+    "JMSLLTE_ScumPathfinder_wood_F_CombatUniform",
+    "JMSLLTE_ScumNavy_red_F_CombatUniform",
+    "JMSLLTE_ScumNavy_white_F_CombatUniform",
+    "JMSLLTE_ScumTroopHeavy_wood_F_CombatUniform"
 ];
 
 KPLIB_r_uniforms_3 = [
-    "U_BG_Guerilla1_1",
-    "U_BG_Guerilla1_2_F",
-    "U_BG_Guerrilla_6_1",
-    "U_BG_leader",
-    "U_I_C_Soldier_Para_1_F",
-    "U_I_C_Soldier_Para_2_F",
-    "U_I_C_Soldier_Para_3_F",
-    "U_I_C_Soldier_Para_4_F",
-    "U_I_C_Soldier_Camo_F"
+    "JMSLLTE_ScumAlCommando_wood_F_CombatUniform",
+    "JMSLLTE_ScumAlCommando_base_F_CombatUniform",
+    "JMSLLTE_ScumAlCommando_desert_F_CombatUniform",
+    "JMSLLTE_ScumAlCommando_cloud_F_CombatUniform",
+    "JMSLLTE_ScumCommando_desertS_F_CombatUniform",
+    "JMSLLTE_JinTrooper_suitEmp_F_CombatUniform",
+    "JMSLLTE_ScumCommando_cloud_F_CombatUniform"
 ];
 
 // Vests
 KPLIB_r_vests_1 = [
-    "V_LegStrapBag_coyote_F",
-    "V_LegStrapBag_olive_F",
+    "JMSLLTE_NavytrooperHolster_armor",
+    "JMSLLTE_CommandosStrip_armor",
     "V_LegStrapBag_black_F",
     "V_Pocketed_coyote_F",
     "V_Pocketed_olive_F",
@@ -132,28 +112,15 @@ KPLIB_r_vests_1 = [
 ];
 
 KPLIB_r_vests_2 = [
-    "V_Chestrig_rgr",
+    "JMSLLTE_CommandoBelt_armor",
     "V_Chestrig_khk",
     "V_Chestrig_oli",
-    "V_Chestrig_blk",
-    "V_HarnessO_brn",
-    "V_HarnessO_gry",
-    "V_HarnessO_ghex_F",
-    "V_HarnessOGL_brn",
-    "V_HarnessOGL_gry",
-    "V_HarnessOGL_ghex_F"
+    "V_Chestrig_blk"
 ];
 
 KPLIB_r_vests_3 = [
-    "V_TacVest_brn",
-    "V_TacVest_khk",
-    "V_TacVest_oli",
-    "V_TacVest_blk",
-    "V_I_G_resistanceLeader_F",
-    "V_TacVest_camo",
-    "V_TacChestrig_grn_F",
-    "V_TacChestrig_cbr_F",
-    "V_TacChestrig_oli_F"
+    "JMSLLTE_Jinata_holster",
+    "JMSLLTE_Scum_mimb_armor"
 ];
 
 // Headgear
@@ -183,8 +150,8 @@ KPLIB_r_headgear_1 = [
 ];
 
 KPLIB_r_headgear_2 = [
-    "H_Bandanna_blu",
-    "H_Bandanna_sand",
+    "JMSLLTE_Path_1_black_cap",
+    "JMSLLTE_Path_1_brown_cap",
     "H_Bandanna_gry",
     "H_Bandanna_camo",
     "H_Bandanna_cbr",
@@ -201,9 +168,9 @@ KPLIB_r_headgear_2 = [
 ];
 
 KPLIB_r_headgear_3 = [
-    "H_ShemagOpen_khk",
-    "H_ShemagOpen_tan",
-    "H_Shemag_olive",
+    "JMSLLTE_Snowtrooper_helmet_CIS",
+    "JMSLLTE_Commando_black_helmet",
+    "JMSLLTE_CommandoH_cloud_helmet",
     "H_Booniehat_khk",
     "H_Booniehat_oli",
     "H_Booniehat_tan",
@@ -217,12 +184,5 @@ KPLIB_r_headgear_3 = [
 KPLIB_r_facegear = [
     "",
     "",
-    "",
-    "G_Bandanna_shades",
-    "G_Bandanna_beast",
-    "G_Bandanna_tan",
-    "G_Bandanna_khk",
-    "G_Bandanna_oli",
-    "G_Bandanna_aviator",
-    "G_Bandanna_blk"
+    ""
 ];

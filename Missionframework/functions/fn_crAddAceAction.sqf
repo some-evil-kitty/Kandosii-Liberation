@@ -32,7 +32,11 @@ _civ addAction [
             "ACE_elasticBandage",
             "ACE_fieldDressing",
             "ACE_packingBandage",
-            "ACE_quikclot"
+            "ACE_quikclot",
+            "knd_bacta",
+            "knd_bactabandage",
+            "knd_bactadressing",
+            "knd_woundglue"
         ] arrayIntersect (vestItems _caller + uniformItems _caller + backpackItems _caller);
 
         if !(_items isEqualTo []) then {

@@ -76,6 +76,11 @@ if (_classname in KPLIB_o_helicopters) then {
 // Process KP object init
 [_newvehicle] call KPLIB_fnc_addObjectInit;
 
+_newVehicle setVariable ["KPLIB_isManagedVehicle",true,true];
+
+//Lock Vehicle for players
+_newVehicle lock 3;
+
 // Spawn crew of vehicle
 if (_classname in KPLIB_o_militiaVehicles) then {
     [_newvehicle] call KPLIB_fnc_spawnMilitiaCrew;

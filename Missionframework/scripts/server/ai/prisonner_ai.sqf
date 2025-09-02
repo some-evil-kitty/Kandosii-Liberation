@@ -16,16 +16,16 @@ if ((_unit isKindOf "Man") && (alive _unit) && (side group _unit == KPLIB_side_e
         };
         removeBackpack _unit;
         removeVest _unit;
-        _unit unassignItem "NVGoggles_OPFOR";
-        _unit removeItem "NVGoggles_OPFOR";
-        _unit unassignItem "NVGoggles_INDEP";
-        _unit removeItem "NVGoggles_INDEP";
+        private _nvg = hmd _unit;
+        _unit unassignItem _nvg;
+        _unit removeItem _nvg;
         _unit setUnitPos "UP";
-        sleep 1;
         private _grp = createGroup [KPLIB_side_civilian, true];
         [_unit] joinSilent _grp;
+        _unit setVariable ["jen_isSurrendered",true,true];
         if (KPLIB_ace) then {
             ["ace_captives_setSurrendered", [_unit, true], _unit] call CBA_fnc_targetEvent;
+
         } else {
             _unit disableAI "ANIM";
             _unit disableAI "MOVE";
