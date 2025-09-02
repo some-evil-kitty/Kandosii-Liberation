@@ -16,7 +16,7 @@
 */
 
 // Enemy infantry classes
-KPLIB_o_officer = "knd_imp_commando_TEST_F";                                        // Officer
+KPLIB_o_officer = "knd_imp_commando_heavy_F";                                        // Officer
 KPLIB_o_squadLeader = "knd_stormtrooper_shock_officer_F";                                 // Squad Leader
 KPLIB_o_teamLeader = "knd_stormtrooper_officer_F";                                  // Team Leader
 KPLIB_o_sentry = "knd_armytrooper_F";                                    // Rifleman (Lite)
@@ -32,7 +32,7 @@ KPLIB_o_atSpecialist = "knd_armytrooper_rocket_F";                              
 KPLIB_o_aaSpecialist = "knd_armytrooper_rocket_AA_F";                                // AA Specialist
 KPLIB_o_medic = "knd_armytrooper_medic_F";                                            // Combat Life Saver
 KPLIB_o_engineer = "knd_stormtrooper_F";                                      // Engineer
-KPLIB_o_paratrooper = "knd_imp_commando_TEST_F";                                 // Paratrooper
+KPLIB_o_paratrooper = "knd_imp_commando_basic_F";                                 // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
 KPLIB_o_mrap = "knd_imp_transport";                                           // Ifrit
@@ -77,7 +77,7 @@ KPLIB_o_armyVehicles = [
     "knd_imp_LIU",                                                  // Recon Saber
     "knd_imp_transport",                                                   // Saber Tank
     "knd_imp_transport",                                        // Saber Tank
-    "knd_imp_saber_base",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
     "knd_imp_hovertank",                                            // Saber GMG
     "knd_imp_hovertank",                                            // Saber GMG
     "knd_imp_LIU",                                            // Saber GMG
@@ -86,11 +86,11 @@ KPLIB_o_armyVehicles = [
     "knd_imp_saber",                                                  // Recon Saber
     "knd_imp_transport",                                                   // Saber Tank
     "knd_imp_transport",                                        // Saber Tank
-    "knd_imp_saber_base",                                        // Saber Tank                                       // Saber GMG                                           // Saber GMG
+    "knd_imp_px10",                                        // Saber Tank                                       // Saber GMG                                           // Saber GMG
     "knd_imp_walker",                                            // Saber GMG
     "knd_imp_LIU",                                        // Saber Tank
     "knd_imp_saber",                                                 // Recon Saber
-    "knd_imp_atte"  
+    "knd_imp_atte"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
@@ -104,7 +104,7 @@ KPLIB_o_armyVehiclesLight = [
     "knd_imp_walker",
     "knd_imp_walker",                                              // Recon Saber
     "knd_imp_saber",                                                  // Recon Saber                                          // Argon Transport
-    "knd_imp_saber_base"                                                  // Recon Saber                                          // Argon Transport 
+    "knd_imp_px10"                                                  // Recon Saber                                          // Argon Transport
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
@@ -112,25 +112,25 @@ KPLIB_o_battleGrpVehicles = [
     "knd_imp_saber",                                                  // Recon Saber  , "knd_imp_walker"
     "knd_imp_transport",                                                  // Recon Saber
     "knd_imp_saber",                                                  // Recon Saber
-    "knd_imp_saber_base",                                                    // Saber Tank
+    "knd_imp_px10",                                                    // Saber Tank
     "knd_imp_transport",                                             // Argon Covered
 	"merc_argon_covered",                                             // Argon Covered
     "knd_imp_transport",                                        // Saber Tank
-    "knd_imp_saber_base",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
     "knd_imp_walker",                                            // Saber GMG
     "knd_imp_walker",                                            // Saber GMG
-    "knd_imp_saber_base",                                        // Saber Tank
-    "knd_imp_hovertank", 
-    "knd_imp_saber",                                                  // Recon Saber  , "knd_imp_walker"
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_hovertank",
+    "knd_imp_px10",                                                  // Recon Saber  , "knd_imp_walker"
     "knd_imp_transport",                                                  // Recon Saber
     "knd_imp_saber",                                                  // Recon Saber
-    "knd_imp_saber_base",                                                    // Saber Tank
+    "knd_imp_px10",                                                    // Saber Tank
     "knd_imp_transport",                                             // Argon Covered                                           // Argon Covered
     "knd_imp_transport",                                        // Saber Tank
-    "knd_imp_saber_base",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
     "knd_imp_walker",                                            // Saber GMG
     "knd_imp_walker",                                            // Saber GMG
-    "knd_imp_saber_base",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
     "knd_imp_hovertank",                                            // Saber GMG
     "knd_imp_atte"
 ];
@@ -140,27 +140,28 @@ KPLIB_o_battleGrpVehiclesLight = [
     "knd_imp_transport",                                                  // Recon Saber
     "knd_imp_walker",                                                  // Recon Saber
     "knd_imp_transport",                                          // Argon Transport                                      // Saber Tank
-    "knd_imp_transport"         
+    "knd_imp_transport"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 KPLIB_o_troopTransports = [
     "knd_imp_transport",                                             // Argon Covered
-    "merc_argon",
-    "knd_imp_reaper",
-    "knd_imp_laat"                               // Po-30 Orca (Armed)
+    "knd_imp_laat",
+    "knd_imp_gozanti"                               // Po-30 Orca (Armed)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 KPLIB_o_helicopters = [
-    "knd_imp_laat"                              // Mi-48 Kajman
+    "knd_imp_laat",
+    "knd_imp_gozanti"                              // Mi-48 Kajman
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 KPLIB_o_planes = [
-    "knd_imp_tie_ln",                                  
+    "knd_imp_tie_ln",
     "knd_imp_interceptor_boring",
     "knd_imp_z95",
-    "knd_imp_z98"                                              // To-201 Shikra
+    "knd_imp_z98",
+    "knd_imp_gozanti"                                              // To-201 Shikra
 ];
