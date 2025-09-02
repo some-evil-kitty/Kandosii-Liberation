@@ -147,14 +147,12 @@ KPLIB_o_battleGrpVehiclesLight = [
 If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 KPLIB_o_troopTransports = [
     "knd_imp_transport",                                             // Argon Covered
-    "knd_imp_laat",
-    "knd_imp_gozanti"                               // Po-30 Orca (Armed)
+    "knd_imp_laat"                             // Po-30 Orca (Armed)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 KPLIB_o_helicopters = [
-    "knd_imp_laat",
-    "knd_imp_gozanti"                              // Mi-48 Kajman
+    "knd_imp_laat"                             // Mi-48 Kajman
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
