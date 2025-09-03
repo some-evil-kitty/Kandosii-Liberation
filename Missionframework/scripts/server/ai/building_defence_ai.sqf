@@ -12,7 +12,7 @@ _unit disableAI "PATH";
         };
 
 
-        if (!(local _unit) OR !(alive _unit) OR (captive _unit) OR (_sector in blufor_sectors) or (_ratio > 0.35)) exitwith 
+        if (!(local _unit) OR !(alive _unit) OR (captive _unit) OR (_sector in blufor_sectors) or (_ratio > 0.25)) exitwith
         {
             [_this select 1] call CBA_fnc_removePerFrameHandler;
             _unit enableAI "PATH";
@@ -35,6 +35,6 @@ _unit disableAI "PATH";
 
 
 
-        
-        
+
+
         }, 5, [_unit,_sector]] call CBA_fnc_addPerFrameHandler;
