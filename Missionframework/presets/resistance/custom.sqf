@@ -119,8 +119,7 @@ KPLIB_r_vests_2 = [
 ];
 
 KPLIB_r_vests_3 = [
-    "JMSLLTE_Jinata_holster",
-    "JMSLLTE_Scum_mimb_armor"
+    "JMSLLTE_Jinata_holster"
 ];
 
 // Headgear

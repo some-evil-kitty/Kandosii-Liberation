@@ -328,10 +328,10 @@ KPLIB_resistance_tier3 = 70;
 KPLIB_resistance_at_chance = 20;
 
 // Chance (0-100) that a resistance squad will join an ongoing sector attack.
-KPLIB_resistance_sector_chance = 35;
+KPLIB_resistance_sector_chance = 70;
 
 // Chance that some resistance units will spawn in blufor sectors for an ambush, if reputation is low.
-KPLIB_resistance_ambush_chance = 25;
+KPLIB_resistance_ambush_chance = 50;
 
 
 /*

@@ -159,7 +159,7 @@ KPLIB_o_helicopters = [
 KPLIB_o_planes = [
     "knd_imp_tie_ln",
     "knd_imp_interceptor_boring",
-    "knd_imp_z95",
     "knd_imp_z98",
-    "knd_imp_gozanti"                                              // To-201 Shikra
+    "knd_imp_gozanti",
+    "knd_o_corvette_F"                                              // To-201 Shikra
 ];
