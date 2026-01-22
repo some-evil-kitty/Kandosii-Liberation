@@ -273,19 +273,19 @@ KPLIB_civinfo_min = 5400;
 KPLIB_civinfo_max = 10800;
 
 // Civil Informant spawn chance. (0-100)
-KPLIB_civinfo_chance = 75;
+KPLIB_civinfo_chance = 100;
 
 // Intel gain for talking to a civil informant.
-KPLIB_civinfo_intel = 5;
+KPLIB_civinfo_intel = 515;
 
 // Time until a civil informant will despawn after spawning. (seconds)
 KPLIB_civinfo_duration = 1200;
 
 // Chance (0-100) that the delivered informant will spawn a time critical task
-KPLIB_civinfo_task_chance = 40;
+KPLIB_civinfo_task_chance = 100;
 
 // Time until the task will despawn if no player is near. (seconds)
-KPLIB_civinfo_task_duration = 900;
+KPLIB_civinfo_task_duration = 1200;
 
 
 /*
@@ -362,7 +362,7 @@ KPLIB_battlegroup_clearance = [
 ];
 
 // Delay after death for wrecks and corpses to be deleted
-KPLIB_cleanup_delay = 1200;
+KPLIB_cleanup_delay = 300;
 
 // Fill magazines on loading loadout?
 KP_liberation_fill_mags = true;
