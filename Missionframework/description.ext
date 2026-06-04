@@ -162,11 +162,6 @@ disabledAI = 1;
 // Disables randomization on certain objects, object types or object kinds in the mission.
 disableRandomization[] = {};
 
-// Allows access to the Debug Console outside of the editor during normal gameplay.
-// 0 - Default behavior, available only in editor
-// 1 - Available in SP and for hosts / logged in admins
-// 2 - Available for everyone
-enableDebugConsole = 1;
 
 // Force enable or disable RotorLib flight model.
 // 0 - based on player's options
