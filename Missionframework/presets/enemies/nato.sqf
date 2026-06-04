@@ -1,12 +1,12 @@
 /*
-    File: nato.sqf
+    File: custom.sqf
     Author: KP Liberation Dev Team - https://github.com/KillahPotatoes
-    Date: 2019-05-03
+    Date: 2017-10-07
     Last Update: 2020-05-15
     License: MIT License - http://www.opensource.org/licenses/MIT
 
     Description:
-        NATO enemy preset.
+        Empire enemy preset.
 
     Needed Mods:
         - None
@@ -16,35 +16,35 @@
 */
 
 // Enemy infantry classes
-KPLIB_o_officer = "B_officer_F";                                        // Officer
-KPLIB_o_squadLeader = "B_Soldier_SL_F";                                 // Squad Leader
-KPLIB_o_teamLeader = "B_Soldier_TL_F";                                  // Team Leader
-KPLIB_o_sentry = "B_Soldier_lite_F";                                    // Rifleman (Lite)
-KPLIB_o_rifleman = "B_Soldier_F";                                       // Rifleman
-KPLIB_o_riflemanLAT = "B_soldier_LAT_F";                                // Rifleman (LAT)
-KPLIB_o_grenadier = "B_Soldier_GL_F";                                   // Grenadier
-KPLIB_o_machinegunner = "B_soldier_AR_F";                               // Autorifleman
-KPLIB_o_heavyGunner = "B_HeavyGunner_F";                                // Heavy Gunner
-KPLIB_o_marksman = "B_soldier_M_F";                                     // Marksman
-KPLIB_o_sharpshooter = "B_Sharpshooter_F";                              // Sharpshooter
-KPLIB_o_sniper = "B_sniper_F";                                          // Sniper
-KPLIB_o_atSpecialist = "B_soldier_AT_F";                                // AT Specialist
-KPLIB_o_aaSpecialist = "B_soldier_AA_F";                                // AA Specialist
-KPLIB_o_medic = "B_medic_F";                                            // Combat Life Saver
-KPLIB_o_engineer = "B_engineer_F";                                      // Engineer
-KPLIB_o_paratrooper = "B_soldier_PG_F";                                 // Paratrooper
+KPLIB_o_officer = "knd_imp_commando_heavy_F";                                        // Officer
+KPLIB_o_squadLeader = "knd_stormtrooper_shock_officer_F";                                 // Squad Leader
+KPLIB_o_teamLeader = "knd_stormtrooper_officer_F";                                  // Team Leader
+KPLIB_o_sentry = "knd_armytrooper_F";                                    // Rifleman (Lite)
+KPLIB_o_rifleman = "knd_armytrooper_F";                                       // Rifleman
+KPLIB_o_riflemanLAT = "knd_armytrooper_rocket_F";                                // Rifleman (LAT)
+KPLIB_o_grenadier = "knd_stormtrooper_shock_F";                                   // Grenadier
+KPLIB_o_machinegunner = "knd_stormtrooper_heavy_F";                               // Autorifleman
+KPLIB_o_heavyGunner = "knd_stormtrooper_heavy_F";                                // Heavy Gunner
+KPLIB_o_marksman = "knd_armytrooper_sniper_F";                                     // Marksman
+KPLIB_o_sharpshooter = "knd_armytrooper_sniper_F";                              // Sharpshooter
+KPLIB_o_sniper = "knd_scoutTrooper_F";                                          // Sniper
+KPLIB_o_atSpecialist = "knd_armytrooper_rocket_F";                                // AT Specialist
+KPLIB_o_aaSpecialist = "knd_armytrooper_rocket_AA_F";                                // AA Specialist
+KPLIB_o_medic = "knd_armytrooper_medic_F";                                            // Combat Life Saver
+KPLIB_o_engineer = "knd_stormtrooper_F";                                      // Engineer
+KPLIB_o_paratrooper = "knd_imp_commando_basic_F";                                 // Paratrooper
 
 // Enemy vehicles used by secondary objectives.
-KPLIB_o_mrap = "B_MRAP_01_F";                                           // M-ATV
-KPLIB_o_mrapArmed = "B_MRAP_01_hmg_F";                                  // MATV (HMG)
-KPLIB_o_transportHeli = "B_Heli_Transport_03_unarmed_F";                // CH-47l Chinook (unarmed)
-KPLIB_o_transportTruck = "B_Truck_01_covered_F";                        // HEMTT Transport (Covered)
-KPLIB_o_transportTruckAmmo = "B_Truck_01_transport_F";                  // HEMTT Transport (Open) -> Has to be able to transport resource crates!
-KPLIB_o_fuelTruck = "B_Truck_01_fuel_F";                                // HEMTT Fuel
-KPLIB_o_ammoTruck = "B_Truck_01_ammo_F";                                // HEMTT Ammo
-KPLIB_o_fuelContainer = "B_Slingload_01_Fuel_F";                        // Huron Fuel Pod
-KPLIB_o_ammoContainer = "B_Slingload_01_Ammo_F";                        // Huron Ammo Pod
-KPLIB_o_flag = "Flag_NATO_F";                                           // Flag
+KPLIB_o_mrap = "knd_imp_transport";                                           // Ifrit
+KPLIB_o_mrapArmed = "knd_imp_transport";                                     // Ifrit (HMG)
+KPLIB_o_transportHeli = "knd_imp_patrol_laat";                   // Mi-290 Taru (Bench)
+KPLIB_o_transportTruck = "merc_argon_covered";;                        // Tempest Transport (Covered)
+KPLIB_o_transportTruckAmmo = "O_Truck_03_transport_F";                  // Tempest Transport (Open) -> Has to be able to transport resource crates!
+KPLIB_o_fuelTruck = "O_Truck_03_fuel_F";                                // Tempest Fuel
+KPLIB_o_ammoTruck = "O_Truck_03_ammo_F";                                // Tempest Ammo
+KPLIB_o_fuelContainer = "Land_Pod_Heli_Transport_04_fuel_F";            // Taru Fuel Pod
+KPLIB_o_ammoContainer = "Land_Pod_Heli_Transport_04_ammo_F";            // Taru Ammo Pod
+KPLIB_o_flag = "ls_flag_imp";                                          // Flag
 
 /* Adding a value to these arrays below will add them to a one out of however many in the array, random pick chance.
 Therefore, adding the same value twice or three times means they are more likely to be chosen more often. */
@@ -52,107 +52,114 @@ Therefore, adding the same value twice or three times means they are more likely
 /* Militia infantry. Lightweight soldier classnames the game will pick from randomly as sector defenders.
 Think of them like garrison or military police forces, which are more meant to control the local population instead of fighting enemy armies. */
 KPLIB_o_militiaInfantry = [
-    "B_Soldier_F",                                                      // Rifleman (Lite)
-    "B_Soldier_F",                                                      // Rifleman (Lite)
-    "B_Soldier_F",                                                      // Rifleman
-    "B_Soldier_F",                                                      // Rifleman
-    "B_soldier_LAT_F",                                                  // Rifleman (AT)
-    "B_soldier_AR_F",                                                   // Autorifleman
-    "B_soldier_M_F",                                                    // Marksman
-    "B_medic_F",                                                        // Medic
-    "B_engineer_F"                                                      // Engineer
+    "knd_O_Imperial_ArmyTrooper_F",                                                     // Rifleman (Lite)
+    "knd_O_Imperial_ArmyTrooper_F",                                                     // Rifleman (Lite)
+    "knd_O_Imperial_ArmyTrooper_F",                                                     // Rifleman
+    "knd_O_Imperial_ArmyTrooper_F",                                                     // Rifleman
+    "knd_O_Imperial_ArmyTrooper_Rocketman_AA_F",                                                 // Rifleman (AT)
+    "knd_O_Imperial_ArmyTrooper_Rocketman_AT_F",                                                  // Autorifleman
+    "knd_O_Imperial_ArmyTrooper_Marksman_F",                                                   // Marksman
+    "knd_O_Imperial_ArmyTrooper_Medic_F",                                               // Medic
+    "knd_O_Imperial_ArmyTrooper_Officer_F"                                                     // Engineer
 ];
 
 // Militia vehicles. Lightweight vehicle classnames the game will pick from randomly as sector defenders. Can also be empty for only infantry milita.
 KPLIB_o_militiaVehicles = [
-    "B_LSV_01_armed_F",                                                 // Polaris DAGOR (XM312)
-    "B_LSV_01_armed_F",                                                 // Polaris DAGOR (XM312)
-    "B_MRAP_01_hmg_F",                                                  // Ifrit (HMG)
-    "B_APC_Wheeled_01_cannon_F"                                         // SPz Badger
+    "knd_imp_LIU",
+    "knd_imp_walker",
+    "knd_imp_transport"                                              // Qilin (armed)
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols at high enemy combat readiness (aggression levels).
 KPLIB_o_armyVehicles = [
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_MRAP_01_gmg_F",                                                  // M-ATV (GMG)
-    "B_LSV_01_AT_F",                                                    // Polaris (Mini-Spike PZAbw)
-    "B_APC_Wheeled_01_cannon_F",                                        // SPz Badger
-    "B_APC_Wheeled_01_cannon_F",                                        // SPz Badger
-    "B_APC_Tracked_01_rcws_F",                                          // Namer
-    "B_APC_Tracked_01_rcws_F",                                          // Namer
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "B_MBT_01_cannon_F",                                                // Merkava Mk IV M
-    "B_AFV_Wheeled_01_cannon_F",                                        // Rooikat 120
-    "B_AFV_Wheeled_01_up_cannon_F"                                      // Rooikat 120 UP
+    "knd_imp_LIU",                                                  // Recon Saber
+    "knd_imp_transport",                                                  // Recon Saber
+    "knd_imp_LIU",                                                  // Recon Saber
+    "knd_imp_transport",                                                   // Saber Tank
+    "knd_imp_transport",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_hovertank",                                            // Saber GMG
+    "knd_imp_hovertank",                                            // Saber GMG
+    "knd_imp_LIU",                                            // Saber GMG
+    "knd_imp_walker",                                        // Saber Tank                                                  // Recon Saber
+    "knd_imp_transport",                                                  // Recon Saber
+    "knd_imp_saber",                                                  // Recon Saber
+    "knd_imp_transport",                                                   // Saber Tank
+    "knd_imp_transport",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank                                       // Saber GMG                                           // Saber GMG
+    "knd_imp_walker",                                            // Saber GMG
+    "knd_imp_LIU",                                        // Saber Tank
+    "knd_imp_saber",                                                 // Recon Saber
+    "knd_imp_atte"
 ];
 
 // All enemy vehicles that can spawn as sector defenders and patrols but at a lower enemy combat readiness (aggression levels).
 KPLIB_o_armyVehiclesLight = [
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_LSV_01_AT_F",                                                    // Polaris DAGOR (Mini-Spike PZAbw)
-    "B_APC_Wheeled_01_cannon_F",                                        // SPz Badger
-    "B_APC_Tracked_01_rcws_F"                                           // Namer
+    "knd_imp_transport",
+    "knd_imp_transport",
+    "knd_imp_transport",
+    "knd_imp_transport",
+    "knd_imp_transport",
+    "knd_imp_transport",
+    "knd_imp_walker",
+    "knd_imp_walker",                                              // Recon Saber
+    "knd_imp_saber",                                                  // Recon Saber                                          // Argon Transport
+    "knd_imp_px10"                                                  // Recon Saber                                          // Argon Transport
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at high enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehicles = [
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_MRAP_01_gmg_F",                                                  // M-ATV (GMG)
-    "B_MRAP_01_gmg_F",                                                  // M-ATV (GMG)
-    "B_LSV_01_AT_F",                                                    // Polaris DAGOR (Mini-Spike PZAbw)
-    "B_Truck_01_transport_F",                                           // HEMTT Transport
-    "B_Truck_01_covered_F",                                             // HEMTT Transport (Covered)
-    "B_APC_Tracked_01_rcws_F",                                          // Namer
-    "B_APC_Tracked_01_rcws_F",                                          // Namer
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "B_MBT_01_cannon_F",                                                // Merkava Mk IV M
-    "B_MBT_01_cannon_F",                                                // Merkava Mk IV M
-    "B_MBT_01_TUSK_F",                                                  // Merkava Mk IV LIC
-    "B_MBT_01_TUSK_F",                                                  // Merkava Mk IV LIC
-    "B_Heli_Light_01_dynamicLoadout_F",                                 // AH-6 Little Bird (Armed)
-    "B_Heli_Light_01_dynamicLoadout_F",                                 // AH-6 Little Bird (Armed)
-    "B_Heli_Transport_03_F",                                            // CH-471 Chinook
-    "B_Heli_Attack_01_dynamicLoadout_F"                                 // RAH-66 Comanche
+    "knd_imp_saber",                                                  // Recon Saber  , "knd_imp_walker"
+    "knd_imp_transport",                                                  // Recon Saber
+    "knd_imp_saber",                                                  // Recon Saber
+    "knd_imp_px10",                                                    // Saber Tank
+    "knd_imp_transport",                                             // Argon Covered
+	"merc_argon_covered",                                             // Argon Covered
+    "knd_imp_transport",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_walker",                                            // Saber GMG
+    "knd_imp_walker",                                            // Saber GMG
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_hovertank",
+    "knd_imp_px10",                                                  // Recon Saber  , "knd_imp_walker"
+    "knd_imp_transport",                                                  // Recon Saber
+    "knd_imp_saber",                                                  // Recon Saber
+    "knd_imp_px10",                                                    // Saber Tank
+    "knd_imp_transport",                                             // Argon Covered                                           // Argon Covered
+    "knd_imp_transport",                                        // Saber Tank
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_walker",                                            // Saber GMG
+    "knd_imp_walker",                                            // Saber GMG
+    "knd_imp_px10",                                        // Saber Tank
+    "knd_imp_hovertank",                                            // Saber GMG
+    "knd_imp_atte"
 ];
 
 // All enemy vehicles that can spawn as battlegroups, either assaulting or as reinforcements, at lower enemy combat readiness (aggression levels).
 KPLIB_o_battleGrpVehiclesLight = [
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_MRAP_01_hmg_F",                                                  // M-ATV (HMG)
-    "B_Truck_01_transport_F",                                           // HEMTT Transport
-    "B_APC_Wheeled_01_cannon_F",                                        // SPz Badger
-    "B_APC_Tracked_01_rcws_F",                                          // Namer
-    "B_APC_Tracked_01_AA_F",                                            // Bardelas
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (Sand)
-    "B_Heli_Transport_03_F"
+    "knd_imp_transport",                                                  // Recon Saber
+    "knd_imp_walker",                                                  // Recon Saber
+    "knd_imp_transport",                                          // Argon Transport                                      // Saber Tank
+    "knd_imp_transport"
 ];
 
 /* All vehicles that spawn within battlegroups (see the above 2 arrays) and also hold 8 soldiers as passengers.
-If something in this array can't hold all 8 soldiers then buggy behaviours may occur.	*/
+If something in this array can't hold all 8 soldiers then buggy behaviours may occur.    */
 KPLIB_o_troopTransports = [
-    "B_Truck_01_transport_F",                                           // HEMTT Transport
-    "B_Truck_01_covered_F",                                             // HEMTT Transport (Covered)
-    "B_APC_Wheeled_01_cannon_F",                                        // SPz Badger
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (sand)
-    "B_Heli_Transport_03_F"                                             // CH-471 Chinook
+    "knd_imp_transport",                                             // Argon Covered
+    "knd_imp_laat"                             // Po-30 Orca (Armed)
 ];
 
 // Enemy rotary-wings that will need to spawn in flight.
 KPLIB_o_helicopters = [
-    "B_Heli_Light_01_dynamicLoadout_F",                                 // AH-6 Little Bird (Armed)
-    "B_CTRG_Heli_Transport_01_sand_F",                                  // UH-80 Ghost Hawk (Sand)
-    "B_Heli_Attack_01_dynamicLoadout_F",                                // RAH-66 Comanche
-    "B_Heli_Transport_01_F",                                            // UH-80 Ghost Hawk
-    "B_Heli_Transport_03_F",                                            // CH-471 Chinook
-    "B_Heli_Transport_03_unarmed_F"                                     // CH-47l Chinook (unarmed)
+    "knd_imp_laat"                             // Mi-48 Kajman
 ];
 
 // Enemy fixed-wings that will need to spawn in the air.
 KPLIB_o_planes = [
-    "B_Plane_CAS_01_dynamicLoadout_F",                                  // A-10D Thunderbolt II (CAS)
-    "B_Plane_Fighter_01_F"                                              // F/A-181 Black Wasp II
+    "knd_imp_tie_ln",
+    "knd_imp_interceptor_boring",
+    "knd_imp_z98",
+    "knd_imp_gozanti",
+    "knd_o_corvette_F"                                              // To-201 Shikra
 ];
